@@ -21,4 +21,5 @@ let countSort = (arr) => {
     }
     return result;
 };
+
 console.log(countSort.call(null, [3, 24, 6, 8, 4, 32, 87]));
