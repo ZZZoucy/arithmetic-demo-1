@@ -15,4 +15,5 @@ let quickSort = (arr) => {
     }
     return quickSort(left).concat([pivot], quickSort(right));
 };
+
 console.log(quickSort.call(null, [43, 64, 2, 1, 643, 8]));
