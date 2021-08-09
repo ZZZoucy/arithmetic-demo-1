@@ -7,6 +7,7 @@ let mergeSort = (arr) => {
     let right = arr.slice(Math.floor(k / 2));
     return merge(mergeSort(left), mergeSort(right));
 };
+
 let merge = (a, b) => {
     if (a.length === 0) {
         return b;
@@ -16,4 +17,5 @@ let merge = (a, b) => {
     }
     return a[0] > b[0] ? [b[0]].concat(merge(a, b.slice(1))) : [a[0]].concat(merge(a.slice(1), b));
 };
+
 console.log(mergeSort.call(null, [5, 7, 2, 1, 33, 8, 54]));
